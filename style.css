@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(0, 219, 0) 0%, rgb(19, 95, 0) 100%);
+    border: 10px solid black;
+}
+
+.calc,
+.name,
+.display,
+.keys,
+.key {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    border-bottom: 1px solid black;
+    color: #ffffff;
+    width: 300px;
+}
+.name h1 {
+    font-size: 1.4rem;
+}
+
+.calc {
+    flex-direction: column;
+    margin-top: 1rem;
+    width: 300px;
+    background-color: rgb(49, 49, 49);
+    padding: 1.8rem;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid black;
+    box-shadow: 0px 4px 4px black;
+}
+
+.display {
+    background-color: #a1a1a1;
+    color: #ffffff;
+    width: 230px;
+    height: 50px;
+    border: 2px solid black;
+    margin: 1rem auto;
+    border-radius: 1rem;
+    padding: 8px;
+}
+.show-display {
+    width: 230px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: right;  
+}
+
+.keys {
+    flex-wrap: wrap;
+    width: 225px;
+}
+
+.key {
+    background-color: #a1a1a1;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 2px;
+    opacity: 0.8;
+    transition: 0.35s;
+}
+.key:hover {
+    opacity: 1;
+}
+
+.keySoma {
+    background-color: red;
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.keySoma:hover {
+    opacity: 1;
+}
+
+.keyMulti {
+    background-color: blue !important;
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.keyMulti:hover {
+    opacity: 1;
+}
+
+.keyDiv {
+    background-color: green !important;
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.keyDiv:hover {
+    opacity: 1;
+}
+
+.keySub {
+    background-color: yellow !important;
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.keySub:hover {
+    opacity: 1;
+}
+
+.keyDel {
+    background-color: #8a2be2 !important;
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.keyDel:hover {
+    opacity: 1;
+}
+
+.keyIgual {
+    background-color: cyan;
+    transition: 0.35s;
+    opacity: 0.8;
+}
+.keyIgual:hover {
+    opacity: 1;
+}
